@@ -1,0 +1,16 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss sass/main.scss css/style.css -w ",
+    "watch-css":"nodeman -e scss -x \"npm run build-css & nodemon server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
